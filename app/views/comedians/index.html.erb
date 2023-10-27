@@ -1,3 +1,8 @@
+<h1> Comedians Index </h1>
 <% @comedians.each do |comic| %>
-   <h4><%= comic.specials.count %> Specials</h4>
+  <p>Name: <%= comic.name %></p>
+  <p>Age: <%= comic.age %></p>
+  <h4><%= comic.specials.count %>Specials</h4> 
 <% end %>
+<%# <p>Average Age: <%= Comedian.average_age %>
+<p>Average Age: <%= @comedians.average_age.round(2) %></p>
